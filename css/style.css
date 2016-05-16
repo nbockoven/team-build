@@ -1,0 +1,21 @@
+html, body {
+	height: 100%;
+}
+
+body>.container-fluid, body>.container-fluid>.row, body>.container-fluid>.row>[class^="col-"] {
+	height: 100%;
+}
+
+.nav-list>.list-group-item {
+	background-color: transparent;
+	border: 0;
+	font-weight: bold;
+}
+
+.nav-list>.list-group-item.active {
+	background-color: #df8a13;
+}
+
+.nav-list>.list-group-item:hover {
+	background-color: #eea236;
+}

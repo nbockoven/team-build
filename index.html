@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="teambuild">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title data-ng-bind="$state.current.data.pagetitle + ' | Envisage Team Build'">Envisage Team Build</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-6 col-sm-3 col-xl-2 bg-warning">
+          <div class="list-group nav-list">
+            <h1 class="list-group-item text-xs-center">Team Build</h1>
+            <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="home"><i class="fa fa-fw fa-home"></i> home</a>
+            <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="users"><i class="fa fa-fw fa-users"></i> users</a>
+            <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="matching"><i class="fa fa-fw fa-arrows-alt"></i> match</a>
+            <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="select"><i class="fa fa-fw fa-bullseye"></i> select</a>
+          </div>
+        </div><!-- .col-sm-2 -->
+
+        <div class="col-xs-6 col-sm-9 col-xl-10" data-ui-view>
+          <i class="fa fa-circle-o-notch fa-spin loading"></i>
+        </div><!-- .col -->
+      </div><!-- .row -->
+    </div><!-- .container-fluid -->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!-- ANGULAR -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://code.angularjs.org/1.0.6/angular-sanitize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.5/angular-filter.min.js"></script>
+    <!-- APP -->
+    <script src="app/app.module.js"></script>
+    <!-- SERVICES -->
+    <script src="app/data/users.js"></script>
+    <!-- CONTROLLERS -->
+    <script src="app/components/home/controller.js"></script>
+    <script src="app/components/users/controller.js"></script>
+    <!-- ROUTER -->
+    <script src="app/app.routes.js"></script>
+    <!-- CUSTOM -->
+    <script src="js/magic.js"></script>
+  </body>
+</html>
