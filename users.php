@@ -23,6 +23,7 @@
 
 $users = [
   [
+    'id'         => 1,
     'first_name' => 'Nate',
     'last_name'  => 'Bockoven',
     'title'      => 'Web Developer',
@@ -30,6 +31,7 @@ $users = [
   ],
 
   [
+    'id'         => 2,
     'first_name' => 'Emil',
     'last_name'  => 'Gallant',
     'title'      => 'Web Director',
@@ -37,6 +39,7 @@ $users = [
   ],
 
   [
+    'id'         => 3,
     'first_name' => 'James',
     'last_name'  => 'Lewis',
     'title'      => 'Web Developer',
@@ -44,6 +47,7 @@ $users = [
   ],
 
   [
+    'id'         => 4,
     'first_name' => 'Hranislov',
     'last_name'  => 'Ruzic',
     'title'      => 'Agent',

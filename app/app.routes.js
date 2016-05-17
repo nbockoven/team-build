@@ -49,24 +49,25 @@ teambuild.config(function( $stateProvider, $urlRouterProvider ){
       pagetitle: 'Users'
     }
   })
-  .state('users.detail', {
-    url: "^/edit",
-    controller: "usersEdit",
-    templateUrl: "app/components/users/view.detail.edit.html",
+  .state('profile', {
+    url: "/user/:id",
+    controller: 'userDetail',
+    templateUrl: "app/components/users/view.detail.html",
     data: {
-      pagetitle: 'User Edit'
+      pagetitle: 'User Profile'
     }
   })
-  // .state('users.detail', {
-  //   url: "/users/{userID:int}",
-  //   controller: function( $scope, $stateParams ){
-  //     $scope.userID = $stateParams.userID;
-  //   },
-  //   templateUrl: "app/components/users/view.detail.html",
-  //   data: {
-  //     pagetitle: 'User Profile'
-  //   }
-  // })
+  .state('profile.edit', {
+    url: '/user/:id/edit',
+    controller: function( $scope, $stateParams ){
+      $scope.id = $stateParams.id;
+    },
+    templateUrl: "app/components/users/view.detail.edit.html",
+    data: {
+      pagetitle: 'Edit User Profile'
+    }
+  })
+
 
 
   ;

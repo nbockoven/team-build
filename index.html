@@ -13,19 +13,19 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-warning hidden-sm-up">
+    <nav class="navbar navbar-light bg-warning hidden-md-up">
       <div class="row">
-        <div class="col-xs-9 col-sm-7 col-lg-12">
+        <div class="col-xs-9 col-sm-7">
           <a class="navbar-brand" data-ui-sref="home">Team Build</a>
         </div><!-- .col-xs-9 -->
         <div class="col-xs-3 col-sm-5 text-xs-right">
-          <button class="navbar-toggler p-r-0" type="button" data-toggle="collapse" data-target="#collapse-navbar">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-navbar">
             &#9776;
           </button>
         </div><!-- .col-xs-3 -->
       </div><!-- .row -->
 
-      <div class="collapse navbar-toggleable-xs clearfix" id="collapse-navbar">
+      <div class="collapse navbar-toggleable-sm clearfix" id="collapse-navbar">
         <hr class="m-t-0 m-y-1">
         <div class="list-group list-group-flush nav-list">
           <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="home"><i class="fa fa-fw fa-home"></i> home</a>
@@ -39,7 +39,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-xl-2 hidden-xs-down bg-warning">
+        <div class="col-sm-3 col-xl-2 hidden-sm-down bg-warning">
           <div class="list-group list-group-flush nav-list">
             <h1 class="list-group-item text-xs-center">Team Build</h1>
             <a class="list-group-item" data-ui-sref-active="active" data-ui-sref="home"><i class="fa fa-fw fa-home"></i> home</a>
@@ -50,13 +50,15 @@
           </div>
         </div><!-- .col-sm-3 -->
 
-        <div class="col-sm-9 col-xl-10" data-ui-view>
+        <div class="col-md-9 col-xl-10" data-ui-view>
           <h1 class="display-1 text-xs-center"><i class="fa fa-cog fa-spin display-1"></i></h1>
         </div><!-- .col-sm-9 -->
       </div><!-- .row -->
     </div><!-- .container-fluid -->
 
+    <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- BOOTSTRAP -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
     <!-- ANGULAR -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
@@ -73,6 +75,8 @@
     <script src="app/components/users/controller.js"></script>
     <!-- ROUTER -->
     <script src="app/app.routes.js"></script>
+    <!-- GOOGLE CHARTS -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- CUSTOM -->
     <script src="js/magic.js"></script>
   </body>

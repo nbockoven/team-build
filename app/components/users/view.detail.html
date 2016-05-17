@@ -1,1 +1,58 @@
-<h1 class="text-warning text-xs-center">User Detail</h1>
+<div class="jumbotron jumbotron-fluid bg-user">
+  <div class="container">
+    <div class="card card-inverse card-block bg-success m-b-0 p-a-2">
+      <h1 class="display-4 text-shadow m-a-0 hidden-xs-down">{{user.first_name}} {{user.last_name}}</h1>
+      <h1 class="text-shadow m-a-0 hidden-sm-up">{{user.first_name}} {{user.last_name}}</h1>
+    </div><!-- .card -->
+  </div><!-- .container -->
+</div><!-- .jumbotron -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{user.image}}" alt="{{user.first_name}} {{user.last_name}}" class="img-thumbnail img-fluid">
+    </div><!-- .col-md-3 -->
+    <div class="col-md-9">
+
+      <form id="form-user-detail">
+        <fieldset>
+          <legend>
+            Truth & Lies
+            <br>
+            <small class="text-muted">Which statement is true?</small>
+          </legend>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="truth" value="1">
+              Here is a statement
+            </label>
+          </div><!-- .radio -->
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="truth" value="2">
+              Here is another statement
+            </label>
+          </div><!-- .radio -->
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="truth" value="3">
+              Here is yet another statement
+            </label>
+          </div><!-- .radio -->
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="truth" value="4">
+              Here is my other statement
+            </label>
+          </div><!-- .radio -->
+
+        </fieldset>
+      </form>
+
+    </div><!-- .col-md-9 -->
+  </div><!-- .row -->
+</div><!-- .container -->

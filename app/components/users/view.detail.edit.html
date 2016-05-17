@@ -1,1 +1,63 @@
-<h1 class="text-warning text-xs-center">User Edit</h1>
+<div class="jumbotron jumbotron-fluid bg-user">
+  <div class="container">
+    <div class="card card-inverse card-block bg-success m-b-0 p-a-2">
+      <h1 class="display-4 text-shadow m-a-0 hidden-xs-down">Edit Profile</h1>
+      <h1 class="text-shadow m-a-0 hidden-sm-up">Edit Profile</h1>
+    </div><!-- .card -->
+  </div><!-- .container -->
+</div><!-- .jumbotron -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{user.image}}" alt="{{user.first_name}} {{user.last_name}}" class="img-thumbnail">
+    </div><!-- .col-md-3 -->
+    <div class="col-md-9">
+      <form id="form-user-detail-edit">
+        <fieldset>
+          <legend>Truth & Lies</legend>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" name="true">
+              </span>
+              <input type="text" class="form-control" name="statements[]">
+            </div><!-- .input-group -->
+          </div><!-- .form-group -->
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" name="true">
+              </span>
+              <input type="text" class="form-control" name="statements[]">
+            </div><!-- .input-group -->
+          </div><!-- .form-group -->
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" name="true">
+              </span>
+              <input type="text" class="form-control" name="statements[]">
+            </div><!-- .input-group -->
+          </div><!-- .form-group -->
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="radio" name="true">
+              </span>
+              <input type="text" class="form-control" name="statements[]">
+            </div><!-- .input-group -->
+          </div><!-- .form-group -->
+
+          <div class="form-group text-xs-right">
+            <input type="submit" class="btn btn-primary" value="submit">
+          </div><!-- .form-group -->
+        </fieldset>
+      </form>
+    </div><!-- .col-md-9 -->
+  </div><!-- .row -->
+</div><!-- .container -->

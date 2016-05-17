@@ -34,10 +34,19 @@ body>.container-fluid, body>.container-fluid>.row, body>.container-fluid>.row>[c
   background-position: center bottom;
 }
 
+.bg-user {
+  background-image: url("../images/background-6.jpg");
+  background-position: center bottom;
+}
+
 .bg-users {
   background-image: url("../images/background-1.jpg");
 }
 
 .card-inverse {
   border: none;
+}
+
+.text-shadow {
+	text-shadow: 4px 3px 0 #449d44, 9px 8px 0 rgba(0,0,0,0.15);
 }

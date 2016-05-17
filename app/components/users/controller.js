@@ -10,7 +10,18 @@ teambuild.controller('users', ['$scope', '$http', function( $scope, $http ){
 
 }]);
 
-teambuild.controller('usersEdit', ['$scope', '$http', function( $scope, $http ){
-
-
+teambuild.controller('userDetail', ['$scope', '$http', '$stateParams', function( $scope, $http, $stateParams ){
+  $http.get("users.php")
+    .success(function( data ){
+      if( data ){
+        $.each(data, function( i, v ){
+          if( v.id == $stateParams.id ){
+            $scope.user = v;
+          }
+        });
+      }
+    })
+    .error(function(){
+      $scope.users = "Error fetching data";
+    });
 }]);
