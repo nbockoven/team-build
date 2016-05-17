@@ -23,6 +23,24 @@ teambuild.config(function( $stateProvider, $urlRouterProvider ){
     }
   })
 
+  .state('login', {
+    url: "/login",
+    controller: "login",
+    templateUrl: "app/components/login/view.html",
+    data: {
+      pagetitle: "Login"
+    }
+  })
+
+  .state('results', {
+    url: "/results",
+    controller: "results",
+    templateUrl: "app/components/results/view.html",
+    data: {
+      pagetitle: "Results"
+    }
+  })
+
   .state('users', {
     url: "/users",
     controller: "users",
@@ -31,24 +49,24 @@ teambuild.config(function( $stateProvider, $urlRouterProvider ){
       pagetitle: 'Users'
     }
   })
-  .state('users.edit', {
-    url: "/users/edit",
-    controller: "users.edit",
+  .state('users.detail', {
+    url: "^/edit",
+    controller: "usersEdit",
     templateUrl: "app/components/users/view.detail.edit.html",
     data: {
       pagetitle: 'User Edit'
     }
   })
-  .state('users.detail', {
-    url: "/users/{userID:int}",
-    controller: function( $scope, $stateParams ){
-      $scope.userID = $stateParams.userID;
-    },
-    templateUrl: "app/components/users/view.detail.html",
-    data: {
-      pagetitle: 'User Profile'
-    }
-  })
+  // .state('users.detail', {
+  //   url: "/users/{userID:int}",
+  //   controller: function( $scope, $stateParams ){
+  //     $scope.userID = $stateParams.userID;
+  //   },
+  //   templateUrl: "app/components/users/view.detail.html",
+  //   data: {
+  //     pagetitle: 'User Profile'
+  //   }
+  // })
 
 
   ;

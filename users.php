@@ -31,7 +31,7 @@ $users = [
 
   [
     'first_name' => 'Emil',
-    'last_name'  => 'Galland',
+    'last_name'  => 'Gallant',
     'title'      => 'Web Director',
     'image'      => 'http://cdn.internationalstudent.com/images/bio-pictures/emil-gallant.gif',
   ],
@@ -48,7 +48,7 @@ $users = [
     'last_name'  => 'Ruzic',
     'title'      => 'Agent',
     'image'      => 'http://cdn.internationalstudent.com/images/bio-pictures/hranislov-ruzic.jpg',
-  ],
+  ]
 ];
 
 echo json_encode( $users );

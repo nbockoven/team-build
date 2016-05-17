@@ -19,3 +19,25 @@ body>.container-fluid, body>.container-fluid>.row, body>.container-fluid>.row>[c
 .nav-list>.list-group-item:hover {
 	background-color: #eea236;
 }
+
+.jumbotron {
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-home {
+  background-image: url("../images/background-2.jpg");
+}
+
+.bg-results {
+  background-image: url("../images/background-5.jpg");
+  background-position: center bottom;
+}
+
+.bg-users {
+  background-image: url("../images/background-1.jpg");
+}
+
+.card-inverse {
+  border: none;
+}

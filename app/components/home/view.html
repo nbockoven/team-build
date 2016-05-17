@@ -1,15 +1,55 @@
-<h1 class="text-warning text-xs-center">Welcome. Discover your team.</h1>
+<div class="jumbotron jumbotron-fluid bg-home">
+  <div class="container">
+    <div class="card card-inverse card-block bg-success display-4 p-a-1 hidden-xs-down">
+      Welcome. Discover your team.
+    </div><!-- .card -->
+    <div class="card card-inverse card-block bg-success h1 p-a-1 hidden-sm-up">
+      Welcome. Discover your team.
+    </div><!-- .card -->
+  </div><!-- .container -->
+</div><!-- .jumbotron -->
 
 <div class="row">
-	<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" data-ng-repeat="user in users | orderBy: 'last_name'">
-		<div class="card">
-			<img class="card-img-top center-block img-fluid" src="{{user.image}}" alt="{{user.first_name}} {{user.last_name}}">
-			<div class="card-block p-a-1 text-truncate">
-				<a class="card-title" data-ng-sref="user.detail">
-					<h4 class="text-truncate">{{user.first_name}} {{user.last_name}}</h4>
-				</a>
-				<em class="text-muted">{{user.title}}</em>
-			</div><!-- .card-block -->
-		</div><!-- .card -->
-	</div><!-- .col-sm-2 -->
+  <div class="col-sm-4 text-xs-center" data-ui-sref="users">
+    <h2 class="display-1">
+      <i class="fa fa-trophy text-warning"></i>
+    </h2>
+    <p class="lead m-b-0">
+      Get to know your teammates.
+    </p>
+    <ul class="list-unstyled">
+      <li>Look over each profile.</li>
+      <li>Leave praise for a job well done.</li>
+      <li><a class="btn btn-info" data-ui-sref="users">Take a quiz</a></li>
+    </ul>
+  </div><!-- .col-sm-4 -->
+
+  <div class="col-sm-4 text-xs-center" data-ui-sref="users">
+    <h2 class="display-1">
+      <i class="fa fa-users text-primary"></i>
+    </h2>
+    <p class="lead m-b-0">
+      Match facts to members of the team.
+    </p>
+    <ul class="list-unstyled">
+      <li>Test your team knowlege.</li>
+      <li>Can you guess which facts match each teammate?</li>
+      <li><a class="btn btn-info" data-ui-sref="match">find out</a></li>
+    </ul>
+  </div><!-- .col-sm-4 -->
+
+  <div class="col-sm-4 text-xs-center" data-ui-sref="users">
+    <h2 class="display-1">
+      <i class="fa fa-pie-chart text-danger"></i>
+    </h2>
+    <p class="lead m-b-0">
+      Results are in.
+    </p>
+    <ul class="list-unstyled">
+      <li>Find out where you stand.</li>
+      <li>Who is the most mysterious?</li>
+      <li><a class="btn btn-info" data-ui-sref="results">consult the scores</a></li>
+    </ul>
+  </div><!-- .col-sm-4 -->
+
 </div><!-- .row -->
