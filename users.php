@@ -28,6 +28,7 @@ $users = [
     'last_name'  => 'Bockoven',
     'title'      => 'Web Developer',
     'image'      => 'http://cdn.internationalstudent.com/images/bio-pictures/nate-bockoven.jpg',
+
   ],
 
   [
@@ -36,6 +37,12 @@ $users = [
     'last_name'  => 'Gallant',
     'title'      => 'Web Director',
     'image'      => 'http://cdn.internationalstudent.com/images/bio-pictures/emil-gallant.gif',
+    'bio'        => 'Emil joined EIC in 2006 as the Director of Technology. Previous to that, he had
+                     worked in Silicon Valley for over 15 years for some of the biggest software and
+                     hardware companies in the world, including Borland International, Apple,
+                     Motorola, and Novell. His job at EIC consists of developing robust web server
+                     applications, designing new websites and using the latest technology to enhance
+                     the online presence of EIC.',
   ],
 
   [
@@ -52,6 +59,11 @@ $users = [
     'last_name'  => 'Ruzic',
     'title'      => 'Agent',
     'image'      => 'http://cdn.internationalstudent.com/images/bio-pictures/hranislov-ruzic.jpg',
+    'bio'        => 'Hranislav joined EIC in early 2016. Originally from Serbia, he grew up in
+                     Columbus, Ohio and graduated from The Ohio State University with a Bachelor\'s
+                     degree in International Studies. Hranislav has extensive experience traveling
+                     across both Europe and Asia and was drawn to Envisage because of their work
+                     with international students and universities.'
   ]
 ];
 

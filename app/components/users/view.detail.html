@@ -9,10 +9,12 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <img src="{{user.image}}" alt="{{user.first_name}} {{user.last_name}}" class="img-thumbnail img-fluid">
+    <div class="col-md-{{user.bio ? 5 : 3}}">
+      <img src="{{user.image}}" alt="{{user.first_name}} {{user.last_name}}" class="img-thumbnail img-fluid pull-xs-left m-r-1">
+      <p data-ng-if="user.bio">{{user.bio}}</p>
     </div><!-- .col-md-3 -->
-    <div class="col-md-9">
+
+    <div class="col-md-{{user.bio ? 7 : 9}}">
 
       <form id="form-user-detail">
         <fieldset>
@@ -49,6 +51,10 @@
               Here is my other statement
             </label>
           </div><!-- .radio -->
+
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="submit">
+          </div><!-- .form-group -->
 
         </fieldset>
       </form>

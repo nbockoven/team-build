@@ -15,7 +15,7 @@ teambuild.controller('userDetail', ['$scope', '$http', '$stateParams', function(
     .success(function( data ){
       if( data ){
         $.each(data, function( i, v ){
-          if( v.id == $stateParams.id ){
+          if( (v.first_name + '-' + v.last_name).toLowerCase().replace(' ', '-') == $stateParams.name.toLowerCase() ){
             $scope.user = v;
           }
         });

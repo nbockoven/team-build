@@ -50,7 +50,7 @@ teambuild.config(function( $stateProvider, $urlRouterProvider ){
     }
   })
   .state('profile', {
-    url: "/user/:id",
+    url: "/user/:name",
     controller: 'userDetail',
     templateUrl: "app/components/users/view.detail.html",
     data: {
@@ -58,9 +58,9 @@ teambuild.config(function( $stateProvider, $urlRouterProvider ){
     }
   })
   .state('profile.edit', {
-    url: '/user/:id/edit',
+    url: '/user/:name/edit',
     controller: function( $scope, $stateParams ){
-      $scope.id = $stateParams.id;
+      $scope.name = $stateParams.name;
     },
     templateUrl: "app/components/users/view.detail.edit.html",
     data: {
